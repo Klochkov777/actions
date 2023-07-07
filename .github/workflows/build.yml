@@ -32,6 +32,8 @@ jobs:
 #      run: mvn -B package --file pom.xml
     - name: Check java
       run: java -version
+    - name: cmod
+      run: chmod +x target/actions-0.0.1-SNAPSHOT.jar
     - name: Start jar
       run: target/actions-0.0.1-SNAPSHOT.jar
     - name: Request
