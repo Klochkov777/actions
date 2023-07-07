@@ -35,7 +35,7 @@ jobs:
     - name: cmod
       run: chmod +x target/actions-0.0.1-SNAPSHOT.jar
     - name: Start jar
-      run: target/actions-0.0.1-SNAPSHOT.jar
+      run: java -jar target/actions-0.0.1-SNAPSHOT.jar
     - name: Request
       run: curl -X GET http://localhost/hello
 
