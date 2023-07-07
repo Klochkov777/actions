@@ -37,9 +37,9 @@ jobs:
     - name: Start jar
       run: |
         java -jar target/actions-0.0.1-SNAPSHOT.jar &
-        sleep 20
+        sleep 10
     - name: Request
-      run: curl -X GET http://localhost/hello
+      run: curl http://localhost:8080/hello
     - name: kill java-process
       run: pkill -f 'java jar'
 
